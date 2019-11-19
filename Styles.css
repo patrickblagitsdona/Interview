@@ -1,0 +1,98 @@
+/* Intro to CSS */
+* {
+	box-sizing: border-box;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: 'Work Sans', sans-serif;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	background-color: #ffc0cb8c;
+	color: #ffe8eb;
+	
+}
+header {
+	padding: 4em 0.25em;
+	max-width: 40em;
+	margin: 0 auto;
+}
+main {
+	padding: 2em 0.25em;
+	background-color: Grey;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+section {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em 0;
+	width: 50%;
+}
+h1 {
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	color: grey;
+}
+h2 {
+	background-color: white;
+	left: 55%;
+    top: 13.5%;
+    position: absolute;
+	color: Grey;
+	display: inline;
+	
+}
+h3 {
+	margin: 0;
+	font-size: 2em;
+	padding: 0.5em;
+
+}
+p {
+	margin: 0 0 1em 0;
+	font-weight: bold; 
+	font-size: 1.25em;
+	padding: 0.5em;
+}
+date {
+	color: #5656569c;
+	display: block;
+	font-weight: bold;
+}
+
+
+summary {
+	outline: none;
+	font-weight: bold;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.toggle {
+	cursor: pointer;
+}
+.toggle h3 {
+	transition: all 0.5s;
+}
+.show h3 {
+	transform: translateY(-0.5em);
+	color: pink;
+}
+.toggle p {
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: all 0.5s ease 0.3s;
+}
+.show p {
+	height: auto;
+	opacity: 1;
+	overflow: visible;
+	color: white;
+}
